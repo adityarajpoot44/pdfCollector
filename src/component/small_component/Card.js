@@ -7,7 +7,7 @@ function Card({
     return (
         <>
             <div className="border p-5 w-[400px] text-center ">
-            <iframe src={link} width="100%" height="500px"></iframe>
+            <iframe title="Example Website" src={link} width="100%" height="500px"></iframe>
                 <p><span className="text-green-400 font-bold text-xl">{name}</span></p>
                 <p className="text-green-300 my-2">{author}</p>
                 {

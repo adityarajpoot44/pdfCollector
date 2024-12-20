@@ -1,2 +1,1 @@
-run commant in the main directory "npm i"
-then npm run start
+To get started with this project, first clone the repository and navigate to the project directory. Then, run `npm i` to install all necessary dependencies. After the installation is complete, you can start the development server by running `npm run start`. This will launch the project, and you can view it in your browser at `http://localhost:3000` (or the specified port). Make sure you have Node.js and npm installed on your system to avoid any issues.
