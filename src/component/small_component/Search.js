@@ -1,19 +1,13 @@
-import { useRef, useState } from "react";
+import { useContext } from "react";
+import SearchContext from "./globaldata/SearchContext";
 
 console.log("hi")
 function Search(){
 
-    let search=useRef()
-    const [pdfvalue,setpdfvalue] =useState("d");
-
-
-    const submitHandle=()=>{
-    console.log(pdfvalue);
-    }
+    const { searchValue, setSearchValue } = useContext(SearchContext);
     return (
         <>
-        <input ref={search} type="text" onChange={(e)=>setpdfvalue(e.target.value)} value={pdfvalue} placeholder="Search Here" className="p-2 border rounded"></input>
-        <button onClick={submitHandle} className="bg-green-700 hover:bg-green-600 text-white p-3 rounded">Search</button>
+        <input type="text" onChange={(e)=>setSearchValue(e.target.value)} value={searchValue} placeholder="Search by name" className="outline-none p-2 border rounded w-[90%] md:w-[40%] lg:w-[30%] text-center"></input>
         </>
     )
 }
